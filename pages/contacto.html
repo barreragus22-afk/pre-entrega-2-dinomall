@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cines Dino Mall - Contacto</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- desde /pages subimos un nivel y vamos a assets/css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
+  <!-- HEADER IGUAL AL RESTO -->
   <header>
     <div class="top-bar">
       <div class="logo-box">
@@ -16,11 +18,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Cartelera</a></li>
+          <li><a href="../index.html">Cartelera</a></li>
           <li><a href="complejos.html">Complejos</a></li>
           <li><a href="promociones.html">Promociones</a></li>
           <li><a href="festeja.html">Festejá con nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
           <li><a href="ayuda.html">Ayuda</a></li>
         </ul>
       </nav>
@@ -29,22 +31,24 @@
 
   <main>
 
-    <section class="form-page">
-      <h2>Contacto</h2>
-      <p class="form-lead">Escribinos tu consulta y te responderemos a la brevedad.</p>
+    <section class="form-page container">
+      <h1>Contacto</h1>
+      <p class="form-lead">
+        Escribinos tu consulta y nuestro equipo de Cines Dino Mall te responderá a la brevedad.
+      </p>
 
       <div class="form-layout">
 
         <!-- Formulario -->
-        <form class="form-contacto">
+        <form class="form-contacto" action="#" method="post">
           <label>
             Nombre y apellido
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" placeholder="Ej: Ana Pérez" required>
           </label>
 
           <label>
             Email
-            <input type="email" name="email" required>
+            <input type="email" name="email" placeholder="tunombre@mail.com" required>
           </label>
 
           <label>
@@ -58,18 +62,22 @@
 
           <label>
             Mensaje
-            <textarea name="mensaje" rows="5" required></textarea>
+            <textarea name="mensaje" rows="5" placeholder="Contanos en qué podemos ayudarte" required></textarea>
           </label>
 
-          <button type="submit" class="btn-enviar">Enviar</button>
+          <button type="submit" class="btn-enviar">Enviar mensaje</button>
         </form>
 
         <!-- Datos de contacto -->
         <aside class="contacto-datos">
-          <h3>Datos de contacto</h3>
-          <p><strong>Email:</strong> cinesdinomallca@gmail.com</p>
-          <p><strong>Teléfono:</strong> 351 3817775</p>
-          <p><strong>Redes:</strong> @cinesdinomall</p>
+          <h2>Datos de contacto</h2>
+          <p><strong>📧 Email:</strong> cinesdinomallca@gmail.com</p>
+          <p><strong>📞 Teléfono:</strong> 351 3817775</p>
+          <p><strong>📱 Redes:</strong> @cinesdinomall</p>
+          <p class="contacto-ayuda-extra">
+            También podés revisar nuestra sección de <a href="ayuda.html">Ayuda / FAQ</a>
+            para encontrar respuestas rápidas a las consultas más frecuentes.
+          </p>
         </aside>
 
       </div>
@@ -83,4 +91,6 @@
 
 </body>
 </html>
+
+
 

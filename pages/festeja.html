@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cines Dino Mall - Festejá con nosotros</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- desde /pages subimos un nivel y luego a assets/css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
+  <!-- HEADER IGUAL AL RESTO -->
   <header>
     <div class="top-bar">
       <div class="logo-box">
@@ -16,10 +18,10 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Cartelera</a></li>
+          <li><a href="../index.html">Cartelera</a></li>
           <li><a href="complejos.html">Complejos</a></li>
           <li><a href="promociones.html">Promociones</a></li>
-          <li><a href="festeja.html">Festejá con nosotros</a></li>
+          <li><a href="festeja.html" class="active">Festejá con nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="ayuda.html">Ayuda</a></li>
         </ul>
@@ -29,21 +31,26 @@
 
   <main>
 
-    <section class="form-page">
-      <h2>Festejá con nosotros</h2>
-      <p class="form-lead">Organizá tu cumpleaños o evento especial en Dino Mall. Completá el formulario y te contactamos.</p>
+    <section class="form-page container">
+      <h1>Festejá con nosotros</h1>
+      <p class="form-lead">
+        Organizá tu cumpleaños, evento escolar o celebración especial en Dino Mall.
+        Completá el formulario y nuestro equipo se comunicará con vos.
+      </p>
 
       <div class="form-layout">
 
-        <form class="form-festeja">
+        <!-- FORMULARIO PRINCIPAL -->
+        <form class="form-festeja" action="#" method="post">
+          
           <label>
             Nombre del contacto
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" placeholder="Ej: María López" required>
           </label>
 
           <label>
             Email
-            <input type="email" name="email" required>
+            <input type="email" name="email" placeholder="tucorreo@mail.com" required>
           </label>
 
           <label>
@@ -63,15 +70,23 @@
 
           <label>
             Comentarios
-            <textarea name="comentarios" rows="5"></textarea>
+            <textarea name="comentarios" rows="5" placeholder="Contanos sobre el festejo"></textarea>
           </label>
 
           <button type="submit" class="btn-enviar">Enviar consulta</button>
         </form>
 
+        <!-- BENEFICIOS -->
         <aside class="contacto-datos">
-          <h3>Beneficios para festejos</h3>
-          <p>Entradas, combos de candy y salas equipadas para que tu fiesta sea única.</p>
+          <h2>Beneficios para festejos</h2>
+          <p>🎉 Salas equipadas para eventos privados.</p>
+          <p>🍿 Combos de candy bar especiales para grupos.</p>
+          <p>🎬 Proyecciones personalizadas según disponibilidad.</p>
+          <p>👨‍🏫 Acompañamiento del equipo de Dino Mall durante el evento.</p>
+          <p>
+            Para más información también podés escribirnos desde la sección
+            <a href="contacto.html">Contacto</a>.
+          </p>
         </aside>
 
       </div>
@@ -85,3 +100,4 @@
 
 </body>
 </html>
+
